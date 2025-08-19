@@ -10,7 +10,7 @@ if (toggle && links){
     toggle.setAttribute('aria-expanded', isExpanded);
   });
   
-  // Close menu when clicking outside
+  // Close menu when clicking outside 
   document.addEventListener('click', (e) => {
     if (!toggle.contains(e.target) && !links.contains(e.target)) {
       links.classList.remove('open');
